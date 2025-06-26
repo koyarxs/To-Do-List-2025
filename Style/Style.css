@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height:100vh;
+    margin:0;
+    padding:2rem;
+    background: linear-gradient(135deg, #273b94, #057550);
+}
+.app {
+    background: #fff;
+    padding:1rem;
+    border-radius:12px;
+    max-width:420px;
+    width:100%;
+    box-shadow:0px 4px 30px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align:center;
+    color:#000000;
+}
+
+/* Input Group */
+.input-group {
+    display:flex;
+    justify-content: space-between;
+    margin:1rem 0;
+}
+#taskInput {
+    flex:1;
+    padding:0.5rem;
+    font-size:1rem;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+#addBtn {
+    background:#0f12bd;
+    color:#fff;
+    font-size:1.5rem;
+    border:none;
+    border-radius:8px;
+    padding:0 1rem;
+    cursor:pointer;
+    margin-left:0.5rem;
+    transition:all 0.3s ease;
+}
+#addBtn:hover {
+    background:#5954aa;
+}
+
+/* Buttons & Filters */
+.actions, .filters {
+    display:flex;
+    justify-content: space-around;
+    margin:1rem 0;
+}
+.actions button,
+.filters button {
+    padding:0.5rem;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    font-size:0.9rem;
+}
+.filters button.active {
+    background:#0f12bd;
+    color:#fff;
+}
+
+/* Task List */
+#taskList {
+    list-style:none;
+    padding:0;
+}
+#taskList li {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0.5rem 1rem;
+    margin:0.5rem 0;
+    border-radius:8px;
+    background:#f9f9f9;
+}
+#taskList li.done {
+    text-decoration:line-through;
+    color:#c40c0c;
+}
+#taskList button {
+    background:none;
+    border:none;
+    font-size:1.2rem;
+    cursor:pointer;
+    color:#c40c0c;
+}
+#taskList button:hover {
+    color:#c40c0c;
+}
+
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity:0; transform:translateY(-10px); }
+    to { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeOut {
+    from { opacity:1; transform:translateY(0); }
+    to { opacity:0; transform:translateY(-10px); }
+}
+.enter {
+    animation: fadeIn 0.3s ease;
+}
+.exit {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+/* Responsivo */
+@media (max-width:500px) {
+    .app {
+        padding:1rem;
+    }
+    h1 {
+        font-size:1.5rem;
+    }
+}

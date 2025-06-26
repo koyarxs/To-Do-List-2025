@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>To‑Do List Simple - Yerko Barrera Pantoja 2025</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="Style/Style.css">
+</head>
+<body>
+<div class="app">
+    <h1>To‑Do List 2025 📋</h1>
+    <div class="input-group">
+        <input id="taskInput" type="text" placeholder="Escriba la tarea...">
+        <button id="addBtn">+</button>
+    </div>
+    <div class="actions">
+        <button id="markAll">Marcar tareas 📝</button>
+        <button id="clearAll">Borrar tareas 🗑️</button>
+    </div>
+    <div class="filters">
+        <button data-filter="all" class="active">Todos</button>
+        <button data-filter="active">Activos</button>
+        <button data-filter="done">Completados</button>
+    </div>
+    <ul id="taskList"></ul>
+</div>
+<script src="JavaScript/Script.js"></script>
+</body>
+
+</html>
