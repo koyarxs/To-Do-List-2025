@@ -7,7 +7,9 @@
 🛠️ Tecnologías utilizadas
 
 🟧 HTML5 para darle estructura y semántica al proyecto.
+
 🟦 CSS3 para darle estilo, darle vida y adaptabilidad a diferentes dispositivos.
+
 🟨 JavaScript para la lógica, interacción y almacenamiento de datos en el navegador.
 
 🌱 Motivación y propósito técnico
